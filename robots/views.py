@@ -12,6 +12,7 @@ class Robot(BaseModel):
     created: str
 
 app = FastAPI()
+
 @app.post("/add-robot")
 async def add_robot(robot: Robot):
     data = {
